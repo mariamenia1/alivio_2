@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import "nullstyle.scss";
+
+body{
+	font-family: Lato;
+	max-width: 1920px;
+	height: 2000px;
+	margin: 0 auto;
+	
+}
+
+.header {
+	width: 1920px;
+	background-color: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0 auto;
+	&__conteiner {
+		margin: 0 274px;
+	}
+	
+	&__body {
+		display: flex;		
+		.heder-logo {
+			margin: 0 170px 0 0;
+			padding: 30px 0;
+		}
+		.header-menu {
+			margin: 0 35px 0 0;			
+			&__list {
+				display: flex;
+				padding: 30px 0;				
+				&_item {
+					margin: 0 35px;
+					&:nth-child(1){
+						margin: 0 35px 0 0px;
+					}
+					&:nth-child(4){
+						margin: 0 283px 0 35px;
+					}
+					&:nth-child(5){
+						margin: 0 0px 0 0px;
+					}
+					&:hover{
+						background-color: #01996D;
+						box-shadow: -2px -1px 0px 31.6px #01996D;
+					}					
+					a{
+						color:  #cceae1;
+						font-weight: 400;
+						font-size: 20px;
+						line-height: 24px;
+					}
+				}
+			}
+		}
+		.header-botton {
+			padding: 30px 0;
+		}
+	}
+}
+
+.container {}
+.logo {}
+
+.botton {
+	span{
+		font-size: 20px;
+		background-color: #01996D;
+		line-height: 25px;
+		padding: 15px 50px;
+		border-radius: 8px;
+		color: #fff;	
+		font-weight: 400;	
+		&:hover{
+			background-color: #B49C7E;
+			color: #fff;
+		}
+		&:active{
+			position: relative;
+			top: 2px;
+			background-color: #d2c3b1;
+		}
+	}
+}
+
+
+.block-1 {
+	background: url('../img/BG.png') 0 84px no-repeat;
+	height: 980px;
+	width: 100%;
+	margin: 0 0 167px 0;
+	&__container {}
+	&__about {
+		padding: 259px 1201px 336px 275px;
+		&_title {
+			font-size: 65px;
+			font-weight: 700;
+			line-height: 73px;
+			font-family: Georgia;
+			margin: 0 0 30px 0;
+			color: #01996D;
+		}
+		&_text {
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 31.4px;
+			color: #484848;
+			margin: 0 0 41px 0;
+		}
+		&_botton {}
+	}
+}
+
+
+.block-2 {
+	&__container {
+		margin: 0 232px 52px 275px;
+	}
+	&__description {
+		display: flex;
+		&_title {
+			margin: 0 136px 0 0;
+			width: 584px;
+			.title-block-2 {
+				font-size: 24px;
+				line-height: 37px;
+				font-weight: 700;
+				color: #424242;
+			}
+			.subtitle-block-2 {
+				font-size: 50px;
+				line-height: 76.5px;
+				font-weight: 700;
+				font-family: Georgia;
+				color: #01996D;
+			}
+	}	
+		&_text {
+			font-size: 20px;
+			line-height: 30px;
+			font-weight: 600;
+			color: #424242;
+			width: 671px;
+			padding: 58px 0 0 0;
+		}
+	}
+}
+
+
+.block-3 {	
+	&__container {
+		margin: 0 254px 51px 275px;		
+	}
+	&__cards {
+		height: 1141px;
+		display: flex;		
+		justify-content: space-between;
+		align-items: flex-start;		
+		&_card {
+			width: 390px;
+			&:nth-child(2){
+				align-self: flex-end;
+				}		
+			.name-number {
+				font-size: 150px;
+				font-family: Georgia;
+				color: rgba(1, 153, 109, 0.2);
+			}
+			.name-text {
+				font-size: 28px;
+				font-weight: 700;
+				font-family: Georgia;
+				line-height: 45px;
+				position: relative;
+				bottom: 45px;
+				left: 100px;
+				}			
+			.сard-info {
+				font-size: 20px;
+				line-height: 30px;
+				font-weight: 500;
+				color: #424242;
+				text-align: left;
+				padding: 0 20px 0 10px;
+				margin: 0 0 37px 0;
+			}
+			.card-image {
+				img{
+					width: 100%;
+					height: 492px;
+					border-radius: 12px;
+				}
+			}
+		}
+	}
+}
+
+
+.block-4 {
+	height: 922px;
+	background-color: #245852;
+	&__container {}
+	&__history {
+		display: flex;
+		&_items {
+			margin: 310px 31px 260px 207px;
+			.title-history {
+				font-size: 50px;
+				font-weight: 700;
+				line-height: 78.5px;
+				font-family: Georgia;
+				color: #fff;
+				margin: 0 0 33px 0;
+			}
+			.subtitle-history {
+				font-size: 25px;
+				line-height: 39px;
+				font-weight: 300;
+				margin: 0 0 57px 0;
+				color: #fff;
+			}
+			.history-botton {}
+		}
+		&_video {
+			margin: 229px 206px 176px 0;
+			iframe{
+				box-shadow: 2px 2px 20px #000;
+			}
+		}
+	}
+}
+
+
+.block-5 {
+
+	&__container {
+		margin: 120px 265px 50px 335px;
+	}
+	&__product {
+		display: flex;
+
+		&_image {
+			margin: 0 86px 0 0;
+			&:after{
+				content: url('../img/card2.png');
+				position: relative;
+				bottom: 230px;
+				right: 80px;
+				
+			}
+
+
+		}
+		&_about {
+
+
+			.title-product {
+				font-size: 25px;
+				line-height: 39px;
+				font-weight: 700;
+				color: #424242;
+				margin: 0 0 10px 0;
+
+			}
+			.subtitle-product {
+				font-size: 50px;
+				font-family: Georgia;
+				line-height: 78.5px;
+				font-weight: 700;
+				color: #01996D;
+				margin: 0 0 20px 0;
+
+			}
+			.description-product {
+				font-size: 20px;
+				line-height: 31.4px;
+				font-weight: 400;
+				color: #484848;
+				margin: 0 0 40px 0;
+				padding: 0 54px 0 0;
+
+
+			}
+		}
+	}
+}
+
+
+.footer {
+	background-color: #245852;
+	&__conteiner {
+		margin: 0 0px 0 274px;
+	}
+	&__body {
+		display: flex;
+		.footer-logo {
+			margin: 0 170px 0 0;
+			padding: 20px 0;
+		}
+		.footer-items {
+
+			&__list {
+				display: flex;
+
+				&_item {
+					padding: 20px 110px;
+					
+					a{
+						color: #fff;
+						font-weight: 400;
+						font-size: 20px;
+						line-height: 24px; 
+					}
+					&:hover{
+						background-color: #7b9a97;
+						box-shadow: 2px 1px 0px 0px #7b9a97;
+					}
+				}
+			}
+		}
+	}
+}
+
